@@ -1,0 +1,107 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Rafael\Desktop\Problema1\projeto_quartus\proj_qsys_jogo.qsys --block-symbol-file --output-directory=C:\Users\Rafael\Desktop\Problema1\projeto_quartus\proj_qsys_jogo --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading projeto_quartus/proj_qsys_jogo.qsys
+Progress: Reading input file
+Progress: Adding Clk [clock_source 18.0]
+Progress: Parameterizing module Clk
+Progress: Adding Jtag [altera_avalon_jtag_uart 18.0]
+Progress: Parameterizing module Jtag
+Progress: Adding LCD_Driver_0 [LCD_Driver 1.0]
+Progress: Parameterizing module LCD_Driver_0
+Progress: Adding Nios [altera_nios2_gen2 18.0]
+Progress: Parameterizing module Nios
+Progress: Adding buttons [altera_avalon_pio 18.0]
+Progress: Parameterizing module buttons
+Progress: Adding memory [altera_avalon_onchip_memory2 18.0]
+Progress: Parameterizing module memory
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: proj_qsys_jogo.Jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: proj_qsys_jogo.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Rafael\Desktop\Problema1\projeto_quartus\proj_qsys_jogo.qsys --synthesis=VERILOG --output-directory=C:\Users\Rafael\Desktop\Problema1\projeto_quartus\proj_qsys_jogo\synthesis --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading projeto_quartus/proj_qsys_jogo.qsys
+Progress: Reading input file
+Progress: Adding Clk [clock_source 18.0]
+Progress: Parameterizing module Clk
+Progress: Adding Jtag [altera_avalon_jtag_uart 18.0]
+Progress: Parameterizing module Jtag
+Progress: Adding LCD_Driver_0 [LCD_Driver 1.0]
+Progress: Parameterizing module LCD_Driver_0
+Progress: Adding Nios [altera_nios2_gen2 18.0]
+Progress: Parameterizing module Nios
+Progress: Adding buttons [altera_avalon_pio 18.0]
+Progress: Parameterizing module buttons
+Progress: Adding memory [altera_avalon_onchip_memory2 18.0]
+Progress: Parameterizing module memory
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: proj_qsys_jogo.Jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: proj_qsys_jogo.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: proj_qsys_jogo: Generating proj_qsys_jogo "proj_qsys_jogo" for QUARTUS_SYNTH
+Warning: proj_qsys_jogo: "No matching role found for Nios_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: proj_qsys_jogo: "No matching role found for Nios_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Info: Jtag: Starting RTL generation for module 'proj_qsys_jogo_Jtag'
+Info: Jtag:   Generation command is [exec C:/intelfpga_lite/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=proj_qsys_jogo_Jtag --dir=C:/Users/Rafael/AppData/Local/Temp/alt8229_5653726311361595473.dir/0002_Jtag_gen/ --quartus_dir=C:/intelfpga_lite/18.0/quartus --verilog --config=C:/Users/Rafael/AppData/Local/Temp/alt8229_5653726311361595473.dir/0002_Jtag_gen//proj_qsys_jogo_Jtag_component_configuration.pl  --do_build_sim=0  ]
+Info: Jtag: Done RTL generation for module 'proj_qsys_jogo_Jtag'
+Info: Jtag: "proj_qsys_jogo" instantiated altera_avalon_jtag_uart "Jtag"
+Info: LCD_Driver_0: "proj_qsys_jogo" instantiated LCD_Driver "LCD_Driver_0"
+Info: Nios: "proj_qsys_jogo" instantiated altera_nios2_gen2 "Nios"
+Info: buttons: Starting RTL generation for module 'proj_qsys_jogo_buttons'
+Info: buttons:   Generation command is [exec C:/intelfpga_lite/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=proj_qsys_jogo_buttons --dir=C:/Users/Rafael/AppData/Local/Temp/alt8229_5653726311361595473.dir/0004_buttons_gen/ --quartus_dir=C:/intelfpga_lite/18.0/quartus --verilog --config=C:/Users/Rafael/AppData/Local/Temp/alt8229_5653726311361595473.dir/0004_buttons_gen//proj_qsys_jogo_buttons_component_configuration.pl  --do_build_sim=0  ]
+Info: buttons: Done RTL generation for module 'proj_qsys_jogo_buttons'
+Info: buttons: "proj_qsys_jogo" instantiated altera_avalon_pio "buttons"
+Info: memory: Starting RTL generation for module 'proj_qsys_jogo_memory'
+Info: memory:   Generation command is [exec C:/intelfpga_lite/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=proj_qsys_jogo_memory --dir=C:/Users/Rafael/AppData/Local/Temp/alt8229_5653726311361595473.dir/0005_memory_gen/ --quartus_dir=C:/intelfpga_lite/18.0/quartus --verilog --config=C:/Users/Rafael/AppData/Local/Temp/alt8229_5653726311361595473.dir/0005_memory_gen//proj_qsys_jogo_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: memory: Done RTL generation for module 'proj_qsys_jogo_memory'
+Info: memory: "proj_qsys_jogo" instantiated altera_avalon_onchip_memory2 "memory"
+Info: Nios_custom_instruction_master_translator: "proj_qsys_jogo" instantiated altera_customins_master_translator "Nios_custom_instruction_master_translator"
+Info: Nios_custom_instruction_master_multi_xconnect: "proj_qsys_jogo" instantiated altera_customins_xconnect "Nios_custom_instruction_master_multi_xconnect"
+Info: Nios_custom_instruction_master_multi_slave_translator0: "proj_qsys_jogo" instantiated altera_customins_slave_translator "Nios_custom_instruction_master_multi_slave_translator0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "proj_qsys_jogo" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "proj_qsys_jogo" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "proj_qsys_jogo" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'proj_qsys_jogo_Nios_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.0/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.0/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=proj_qsys_jogo_Nios_cpu --dir=C:/Users/Rafael/AppData/Local/Temp/alt8229_5653726311361595473.dir/0011_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.0/quartus/bin64/ --verilog --config=C:/Users/Rafael/AppData/Local/Temp/alt8229_5653726311361595473.dir/0011_cpu_gen//proj_qsys_jogo_Nios_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.11.29 15:14:18 (*) Starting Nios II generation
+Info: cpu: # 2019.11.29 15:14:18 (*)   Checking for plaintext license.
+Info: cpu: # 2019.11.29 15:14:19 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.0/quartus/bin64/
+Info: cpu: # 2019.11.29 15:14:19 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2019.11.29 15:14:19 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2019.11.29 15:14:19 (*)   Plaintext license not found.
+Info: cpu: # 2019.11.29 15:14:19 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.11.29 15:14:19 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.11.29 15:14:19 (*)   Creating all objects for CPU
+Info: cpu: # 2019.11.29 15:14:21 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.11.29 15:14:21 (*)   Creating plain-text RTL
+Info: cpu: # 2019.11.29 15:14:22 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'proj_qsys_jogo_Nios_cpu'
+Info: cpu: "Nios" instantiated altera_nios2_gen2_unit "cpu"
+Info: Nios_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "Nios_data_master_translator"
+Info: Jtag_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "Jtag_avalon_jtag_slave_translator"
+Info: Nios_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "Nios_data_master_agent"
+Info: Jtag_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "Jtag_avalon_jtag_slave_agent"
+Info: Jtag_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "Jtag_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Rafael/Desktop/Problema1/projeto_quartus/proj_qsys_jogo/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: proj_qsys_jogo: Done "proj_qsys_jogo" with 26 modules, 38 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

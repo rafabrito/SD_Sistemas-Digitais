@@ -1,0 +1,26 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst proj_qsys_jogo.memory -pg 1 -lvl 3 -y 130
+preplace inst proj_qsys_jogo.Nios.reset_bridge -pg 1
+preplace inst proj_qsys_jogo.Nios -pg 1 -lvl 2 -y 150
+preplace inst proj_qsys_jogo.LCD_Driver_0 -pg 1 -lvl 3 -y 310
+preplace inst proj_qsys_jogo.Jtag -pg 1 -lvl 3 -y 210
+preplace inst proj_qsys_jogo.Nios.cpu -pg 1
+preplace inst proj_qsys_jogo.Clk -pg 1 -lvl 1 -y 190
+preplace inst proj_qsys_jogo.buttons -pg 1 -lvl 3 -y 30
+preplace inst proj_qsys_jogo -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst proj_qsys_jogo.Nios.clock_bridge -pg 1
+preplace netloc POINT_TO_POINT<net_container>proj_qsys_jogo</net_container>(MASTER)Nios.custom_instruction_master,(SLAVE)LCD_Driver_0.nios_custom_instruction_slave) 1 2 1 670
+preplace netloc POINT_TO_POINT<net_container>proj_qsys_jogo</net_container>(SLAVE)Jtag.irq,(MASTER)Nios.irq) 1 2 1 650
+preplace netloc EXPORT<net_container>proj_qsys_jogo</net_container>(SLAVE)Clk.clk_in,(SLAVE)proj_qsys_jogo.clk) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>proj_qsys_jogo</net_container>(SLAVE)Jtag.clk,(SLAVE)buttons.clk,(SLAVE)Nios.clk,(SLAVE)memory.clk1,(MASTER)Clk.clk) 1 1 2 270 40 730
+preplace netloc EXPORT<net_container>proj_qsys_jogo</net_container>(SLAVE)Clk.clk_in_reset,(SLAVE)proj_qsys_jogo.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>proj_qsys_jogo</net_container>(SLAVE)proj_qsys_jogo.rw,(SLAVE)LCD_Driver_0.conduit_end_1) 1 0 3 NJ 340 NJ 340 NJ
+preplace netloc EXPORT<net_container>proj_qsys_jogo</net_container>(SLAVE)LCD_Driver_0.conduit_end,(SLAVE)proj_qsys_jogo.en) 1 0 3 NJ 320 NJ 320 NJ
+preplace netloc EXPORT<net_container>proj_qsys_jogo</net_container>(SLAVE)proj_qsys_jogo.db,(SLAVE)LCD_Driver_0.conduit_end_3) 1 0 3 NJ 380 NJ 380 NJ
+preplace netloc FAN_OUT<net_container>proj_qsys_jogo</net_container>(SLAVE)Nios.reset,(SLAVE)memory.reset1,(MASTER)Clk.clk_reset,(SLAVE)buttons.reset,(SLAVE)Jtag.reset) 1 1 2 270 290 690
+preplace netloc EXPORT<net_container>proj_qsys_jogo</net_container>(SLAVE)LCD_Driver_0.conduit_end_2,(SLAVE)proj_qsys_jogo.rs) 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc EXPORT<net_container>proj_qsys_jogo</net_container>(SLAVE)proj_qsys_jogo.buttons,(SLAVE)buttons.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc INTERCONNECT<net_container>proj_qsys_jogo</net_container>(SLAVE)Nios.debug_mem_slave,(SLAVE)Jtag.avalon_jtag_slave,(MASTER)Nios.data_master,(SLAVE)buttons.s1,(MASTER)Nios.instruction_master,(SLAVE)memory.s1) 1 1 2 290 110 710
+levelinfo -pg 1 0 60 980
+levelinfo -hier proj_qsys_jogo 70 100 410 760 970
