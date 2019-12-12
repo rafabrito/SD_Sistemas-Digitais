@@ -2,7 +2,7 @@ set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name I
 set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_TOOL_VERSION "18.0"
 set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "proj_qsys_jogo" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../proj_qsys_jogo.sopcinfo"]
-set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name SLD_INFO "QSYS_NAME proj_qsys_jogo HAS_SOPCINFO 1 GENERATION_ID 1575051233"
+set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name SLD_INFO "QSYS_NAME proj_qsys_jogo HAS_SOPCINFO 1 GENERATION_ID 1576173537"
 set_global_assignment -library "proj_qsys_jogo" -name MISC_FILE [file join $::quartus(qip_path) "../proj_qsys_jogo.cmp"]
 set_global_assignment -library "proj_qsys_jogo" -name SLD_FILE [file join $::quartus(qip_path) "proj_qsys_jogo.regmap"]
 set_global_assignment -library "proj_qsys_jogo" -name SLD_FILE [file join $::quartus(qip_path) "proj_qsys_jogo.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name I
 set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTU3NTA1MTIzMw==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTU3NjE3MzUzNw==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBJViBF::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::RVA0Q0U2RTIyQzg=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "proj_qsys_jogo" -library "proj_qsys_jogo" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::OA==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="

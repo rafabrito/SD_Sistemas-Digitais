@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("C:/Users/Rafael/Documents/GitHub/SD_Sistemas-Digitais/Problema1/projeto_quartus/output_files/") File("Proj_Nios_jogo.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6E22) Path("C:/Users/Rafael/Documents/GitHub/SDSistemasDigitais/Problema1/projeto_quartus/output_files/") File("Proj_Nios_jogo.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
