@@ -1,11 +1,11 @@
-Fitter Status : Successful - Fri Nov 29 15:29:16 2019
+Fitter Status : Successful - Thu Dec 05 14:42:36 2019
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : Proj_Nios_jogo
 Top-level Entity Name : top_proj_nios
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 1,716 / 6,272 ( 27 % )
+Total logic elements : 1,711 / 6,272 ( 27 % )
     Total combinational functions : 1,596 / 6,272 ( 25 % )
     Dedicated logic registers : 926 / 6,272 ( 15 % )
 Total registers : 926
